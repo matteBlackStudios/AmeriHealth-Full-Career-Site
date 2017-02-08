@@ -1,0 +1,32 @@
+#benefits-intro, #benefits-contact {
+	h4 {
+		font-weight: 500;
+		color: $amerihealth-dark-blue;
+		line-height: rem-calc(36);
+	}
+}
+#benefits-hr hr {
+	margin-bottom: rem-calc(80);
+}
+#benefits-list {
+	h4, i {
+		color: $amerihealth-red;
+	}
+	h4 {
+		font-weight: 500;
+	}
+	i {
+		font-size: rem-calc(36);
+		margin-bottom: rem-calc(15);
+	}
+}
+#benefits-contact {
+	margin: rem-calc(100) auto;
+}
+#benefits-contact-button {
+	margin-bottom: rem-calc(100);
+	.button {
+		font-weight: bold;
+		display: block;
+	}
+}

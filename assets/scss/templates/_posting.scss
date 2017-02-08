@@ -1,0 +1,56 @@
+.posting {
+	#back, #returning {
+		@include breakpoint(medium) {
+			padding-top: rem-calc(80);
+		}
+		a {
+			color: $white;
+			font-weight: bold;
+			&:hover {
+				opacity: 0.7;
+			}
+			i {
+				margin-right: rem-calc(10);
+			}
+		}
+	}
+	#returning {
+		text-align: right;
+		text-decoration: underline;
+	}
+}
+#posting-title {
+	h1 {
+		color: $amerihealth-red;
+		line-height: 1;
+		margin-bottom: rem-calc(15);
+		@include breakpoint(medium) {
+			font-size: rem-calc(36);
+		}
+	}
+	p {
+		color: $amerihealth-red;
+		font-weight: bold;
+		text-transform: uppercase;
+		i {
+			margin-right: rem-calc(10);
+		}
+	}
+	.button {
+		display: block;
+		font-weight: bold;
+	}
+	hr {
+		margin-bottom: rem-calc(40);
+	}
+}
+#posting-apply {
+	hr {
+		margin: rem-calc(40) 0 rem-calc(60);
+	}
+	.button {
+		display: block;
+		font-weight: bold;
+		margin-bottom: rem-calc(70);
+	}
+}

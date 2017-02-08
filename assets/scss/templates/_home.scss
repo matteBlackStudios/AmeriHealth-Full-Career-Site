@@ -1,0 +1,80 @@
+.homepage {
+	input, .button {
+		background: $amerihealth-blue;
+		color: $white;
+		border: none;
+		font-weight: bold;
+		height: rem-calc(60);
+	}
+	form {
+	    position: absolute;
+	    width: 100%;
+	    bottom: -40px;
+	}
+	.button {
+		display: block;
+		width: 100%;
+		font-size: rem-calc(20);
+		box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+		i {
+			transition: all ease 0.3s;
+		}
+		&:hover {
+			i {
+				opacity: 0.7;
+				transition: all ease 0.3s;
+			}
+		}
+	}
+	input {
+		font-size: rem-calc(14);
+		padding-left: rem-calc(70);
+		box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+		&:focus {
+			background: $amerihealth-blue;
+			outline: none;
+		    box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+			border: none;
+		}
+	}
+	
+}
+::-webkit-input-placeholder  { 
+	color: $white!important;
+}
+#home-intro {
+	h1 {
+		margin: rem-calc(100) 0;
+		text-align: center;
+		color: $amerihealth-blue;
+		font-weight: bold;
+		line-height: rem-calc(48);
+	}
+}
+#home-cta {
+	margin-bottom: rem-calc(80);
+	h4 {
+		margin-top: rem-calc(22);
+		margin-bottom: rem-calc(60);
+	}
+	a {
+		color: #68BBE8;
+		font-weight: bold;
+		margin-bottom: rem-calc(10);
+		display: block;
+	}
+	p {
+		color: #68BBE8;
+		margin-bottom: 0;
+	}
+	.programs {
+		padding-bottom: rem-calc(75);
+	}
+	.button {
+		color: $white;
+		width: 100%;
+	}
+	.border-left {
+		border-left: 1px solid #E4E5E6;
+	}
+}

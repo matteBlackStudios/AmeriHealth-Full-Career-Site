@@ -1,18 +1,58 @@
-#footer-container {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #ccc;
-  margin-top: rem-calc(60);
-
-  #footer {
-    @include grid-row();
-    padding: rem-calc(30) 0;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  }
+footer {
+	background: $amerihealth-blue;
+	padding: rem-calc(50) 0;
+	color: $amerihealth-light-blue;
+	p {
+		margin-bottom: 0;
+	}
+	.social {
+		p {
+			margin-bottom: rem-calc(40);
+			font-weight: bold;
+			color: $white;
+		}
+		a {
+			margin-right: rem-calc(15r);
+			font-size: rem-calc(24);
+			color: $white;
+		}
+		i {
+			transition: all ease 0.3s;
+			&:hover {
+				opacity: 0.7;
+				transition: all ease 0.3s;
+			}
+		}
+	}
+	.button {
+		background: none;
+		width: 80%;
+		border: 1px solid $amerihealth-light-blue;
+		color: $amerihealth-light-blue;
+		font-weight: bold;
+		margin: rem-calc(30) 10% 0;
+		position: relative;
+		&:hover {
+			background: $white;
+			color: $amerihealth-dark-blue;
+			border: 1px solid $white;
+		}
+		i {
+			font-size: rem-calc(20);
+			position: absolute;
+			right: rem-calc(20);
+			bottom: rem-calc(9);
+		}
+	}
+	img	{
+		width: 75%;
+	}
+}
+#post-footer {
+	background: #D8D8D8;
+	padding: rem-calc(10) 0;
+	p {
+		margin-bottom: 0;
+		font-size: rem-calc(12);
+	}
 }

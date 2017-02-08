@@ -1,0 +1,52 @@
+#faq-title {
+	color: $amerihealth-blue;
+	margin-bottom: rem-calc(60);
+	h1 {
+		margin-bottom: rem-calc(60);
+	}
+}
+#faq-nav {
+	li {
+		list-style: none;
+		font-weight: bold;
+		margin-bottom: rem-calc(10);
+		a {
+			color: $amerihealth-light-blue;
+		}
+		&.active {
+			a {
+				color: $amerihealth-red;
+			}
+		}
+	}
+	&.affix{
+	    position: fixed;
+	    top: rem-calc(20);
+	    left: rem-calc(15);
+	    @include breakpoint(large) {
+	    	left: rem-calc(110);
+	    }
+	    transition: all 0.3s ease;
+	}
+}
+.topic-section {
+	margin-bottom: rem-calc(60);
+	h4 {
+		color: $amerihealth-red;
+		margin-bottom: rem-calc(40);
+	}
+	.question {
+		margin-bottom: rem-calc(40);
+		p {
+			margin-bottom: 0;
+		}
+		strong {
+			color: $amerihealth-blue;
+			margin-bottom: rem-calc(7);
+			display: block;
+		}
+	}
+}
+#faq-container {
+	margin-bottom: rem-calc(80);
+}

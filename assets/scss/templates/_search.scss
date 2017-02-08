@@ -1,0 +1,166 @@
+#search-mast {
+	overflow: hidden;
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+	margin-bottom: rem-calc(80);
+}
+#search-filters {
+	width: 100%;
+	@include breakpoint(medium) {
+		width: 75%;
+	}
+	@include breakpoint(large) {
+		width: 50%;
+	}
+	background: $amerihealth-blue;
+	display: inline;
+	float: left;
+	.align-middle {
+		height: 800px;
+	}
+	h1 {
+		color: $white;
+		text-align: center;
+		margin-bottom: rem-calc(50);
+	}
+	select {
+		font-weight: bold;
+	}
+	select, input {
+		padding-left: rem-calc(20);
+	}
+	button {
+		background: $white;
+		color: $amerihealth-dark-blue;
+		display: block;
+		width: 100%;
+		padding: rem-calc(15) 0;
+		text-transform: uppercase;
+		margin-top: rem-calc(50);
+		font-size: rem-calc(14);
+		font-weight: bold;
+		cursor: pointer;
+		transition: all ease 0.3s;
+		&:hover {
+			opacity: 0.7;
+			transition: all ease 0.3s;
+		}
+		i {
+			margin-left: rem-calc(10);
+		}
+	}
+}
+.map-container {
+	display: none;
+	@include breakpoint(medium) {
+		width: 25%;
+	}
+	@include breakpoint(large) {
+		width: 50%;
+	}
+	display: inline;
+	float: left;
+}
+#postings {
+	min-height: rem-calc(500);
+}
+.pagination-container {
+	text-align: center;
+	margin-top: rem-calc(50);
+	a {
+		color: $amerihealth-blue;
+	}
+	.current {
+		background: none;
+		font-weight: bold;
+		color: $amerihealth-blue;
+	}
+	a:hover {
+		background: none;
+		font-weight: bold;
+	}
+}
+table {
+	border-collapse: collapse;
+	thead {
+		border: none;
+	}
+	tbody {
+		td {
+			padding-top: rem-calc(30);
+			padding-bottom: rem-calc(30);
+			&:first-child {
+				margin-left: 100px;
+			}
+		}
+		tr {
+			border-bottom: 1px solid #E4E5E6;
+			cursor: pointer;
+			transition: all ease 0.3s;
+			&:hover {
+				color: $amerihealth-red;
+				transition: all ease 0.3s;
+			}
+		}
+	}
+	.id {
+		width: 30%;
+		padding-left: 10%;
+	}
+}
+.pagination-container {
+	margin-bottom: rem-calc(60);
+}
+#googleMap { 
+	width: 100%; height: 400px; top: 0; left: 0; right: 0; bottom: 0; 
+	img {
+		display: none!important;
+	}
+}
+       
+ /*style the box*/  
+ .gm-style .gm-style-iw {
+    background-color: $amerihealth-red !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 20px !important;
+    padding-top: 10px;
+    display: block !important;
+    z-index: 9999999!important;
+    text-align: center !important;
+    color: $white !important;
+ }    
+
+ /*style the p tag*/
+ .gm-style .gm-style-iw #google-popup p{
+    padding: 10px;
+ }
+ 
+
+/*style the arrow*/
+.gm-style div div div div div div div div {
+    background-color: $amerihealth-red !important;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    color: #fff;
+    border-radius: 0 0 50% 50% !important;
+    font-size: 50px !important;
+    box-shadow: none !important;
+}
+
+/*style the link*/
+.gm-style div div div div div div div div a {
+    color: $white !important;
+    font-weight: bold;
+}
+.content-window {
+	h3 {
+		font-size: rem-calc(16);
+	}
+	.locationcount {
+		font-weight: 500;
+	}
+}

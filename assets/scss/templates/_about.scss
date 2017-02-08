@@ -1,0 +1,80 @@
+#about-intro {
+	h4 {
+		font-weight: 100;
+		line-height: rem-calc(36);
+		color: $amerihealth-dark-blue;
+	}
+}
+#about-hr {
+	margin: rem-calc(60) auto;
+}
+#about-heart {
+	margin-bottom: rem-calc(120);
+	h1 {
+		color: $amerihealth-red;
+		font-weight: 100;
+		font-style: italic;
+		margin-bottom: rem-calc(80);
+		@include breakpoint(large) {
+			font-size: rem-calc(72);
+		}
+	}
+	#image-left {
+		height: rem-calc(400);
+	}
+	.uncollapse-section {
+		@include breakpoint(medium) {
+			max-width: 37.5rem;
+			padding-left: 3.125rem;
+		}
+	}
+}
+#about-slider {
+	background: $amerihealth-blue;
+	position: relative;
+	margin-bottom: rem-calc(-150);
+	padding: rem-calc(40) 0;
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+	p {
+		color: $white;
+		font-style: italic;
+		line-height: rem-calc(42);
+		text-align: center;
+		letter-spacing: rem-calc(1.5);
+		@include breakpoint(medium) {
+			font-size: rem-calc(36);
+		}
+	}
+	#slider-prev, #slider-next {
+		color: $white;
+		font-size: rem-calc(48);
+		position: absolute;
+		top: 45%;
+		z-index: 9999;
+		&:hover {
+			opacity: 0.7;
+		}
+		//transform: translate(-50%, -50%);
+	}
+	#slider-prev {
+		left: rem-calc(25);
+	}
+	#slider-next {
+		right: rem-calc(25);
+	}
+}
+#about-feat-testimonials {
+	padding-bottom: rem-calc(100);
+	background: #F5F5F6;
+	padding-top: rem-calc(275);
+	h3 {
+		color: $amerihealth-blue;
+		line-height: rem-calc(36);
+	}
+	.tesimonial {
+		padding: rem-calc(40) 0;
+	}
+	img {
+		width: rem-calc(280);
+	}
+}

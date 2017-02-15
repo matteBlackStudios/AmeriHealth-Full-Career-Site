@@ -4,7 +4,13 @@
 	width: 100%;
 	border-top: rem-calc(20) solid $white;
 	img {
-		width: 50%;
+		width: rem-calc(100);
+		@include breakpoint(medium) {
+			width: rem-calc(150);
+		}
+		@include breakpoint(large) {
+			width: rem-calc(180);
+		}
 	}
 	.home {
 		a {
@@ -18,6 +24,13 @@
 			background: none;
 			opacity: 0.7;
 		}
+		i {
+			&.fa-caret-down {
+				margin-left: rem-calc(2);
+			}
+		    margin-right: rem-calc(-3);
+			margin-left: rem-calc(-3);
+		}
 	}
 	i {
 		font-size: rem-calc(20);
@@ -30,10 +43,15 @@
 	}
 	.is-dropdown-submenu-item {
 		text-align: right;
-		padding: 0.5rem 0.5rem!important;
+		a {
+			padding: 0.2rem 0.5rem!important;
+			height: rem-calc(20);
+		}
+	}
+	.desktop-menu, .top-bar-left {
+		display: block!important;
 	}
 	.top-bar-left li a {
-		display: inline;
 		&:hover {
 			opacity: 1;
 		}
@@ -51,13 +69,17 @@
 	&.homepage {
 		box-shadow: none;
 		.align-middle {
-			height: rem-calc(450);
+			height: rem-calc(300);
+			@include breakpoint(medium) {
+				height: rem-calc(450);
+			}
 		}
 	}
 	&.blue {
 		height: rem-calc(240);
 		box-shadow: none;
 		background: $amerihealth-blue;
+		margin-bottom: rem-calc(50);
 	}
 	&.posting {
 		height: rem-calc(240);
@@ -67,7 +89,10 @@
 	h1 {
 		color: $white;
 		font-weight: bold;
-		line-height: rem-calc(48);
+		line-height: rem-calc(24);
+		@include breakpoint(medium) {
+			line-height: rem-calc(48);
+		}
 		letter-spacing: rem-calc(3.43);
 		text-transform: uppercase;
 		margin-top: rem-calc(70);

@@ -88,13 +88,6 @@
 @import "components/links";
 
 // Templates
-@import "templates/front";
-@import "templates/kitchen-sink";
-@import "templates/page-default";
-@import "templates/page-sidebar-left";
-@import "templates/page-full-width";
-@import "templates/single-post";
-
 @import "templates/global";
 @import "templates/home";
 @import "templates/about";
@@ -102,5 +95,6 @@
 @import "templates/faq";
 @import "templates/search";
 @import "templates/posting";
+@import "templates/programs";
 
 @import "templates/slick";

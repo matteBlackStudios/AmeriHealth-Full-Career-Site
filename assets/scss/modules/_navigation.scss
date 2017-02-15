@@ -1,12 +1,41 @@
 // Navigation breakpoints
 .desktop-menu, .top-bar-left {
-  @include show-for(medium);
+  @include show-for(small);
 }
 
 #mobile-menu, .title-bar {
-  @include hide-for(medium);
+  @include hide-for(small);
 }
-
+#site-navigation {
+	display: block!important;
+	.top-bar-left {
+		@include breakpoint(small only) {
+			width: auto;
+		}
+	}
+	.top-bar-right {
+		@include breakpoint(small only) {
+			width: 70%;
+			text-align: right;
+			li {
+				display: inline-block;
+				a {
+					padding: 1rem 0.5rem;
+					text-align: right;
+					height: rem-calc(20);
+				}
+			}
+		}
+	}
+	.top-bar-left, .top-bar-right, .desktop-menu {
+		@include breakpoint(small only) {
+			display: block!important;
+		}
+	}
+}
+#menu-item-33, #menu-item-35, #menu-item-36 {
+	@include show-for(medium);
+}
 // Mobile menu
 .off-canvas {
   > ul.menu {

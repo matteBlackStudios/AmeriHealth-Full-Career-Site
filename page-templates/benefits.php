@@ -26,19 +26,19 @@ get_header(); ?>
 <div class="row small-up-1 medium-up-2 large-up-4 text-center" id="benefits-list">
 	<div class="columns">
 		<i class="fa fa-check-square-o" aria-hidden="true"></i>
-		<h4>Career development and training</h4>
+		<h4><?= types_render_field('benefit-1-copy', array('output'=>'raw')) ;?></h4>
 	</div>
 	<div class="columns">
 		<i class="fa fa-plus-circle" aria-hidden="true"></i>
-		<h4>Medical, dental and vision coverage</h4>
+		<h4><?= types_render_field('benefit-2-copy', array('output'=>'raw')) ;?></h4>
 	</div>
 	<div class="columns">
 		<i class="fa fa-check-square-o" aria-hidden="true"></i>
-		<h4>Retirement plans</h4>
+		<h4><?= types_render_field('benefit-3-copy', array('output'=>'raw')) ;?></h4>
 	</div>
 	<div class="columns">
 		<i class="fa fa-trophy" aria-hidden="true"></i>
-		<h4>Performance-based bonuses</h4>
+		<h4><?= types_render_field('benefit-4-copy', array('output'=>'raw')) ;?></h4>
 	</div>
 </div>
 
@@ -50,7 +50,7 @@ get_header(); ?>
 
 <div class="row align-center text-center" id="benefits-contact-button">
 	<div class="small-11 medium-6 large-4 columns">
-		<a class="button">CONTACT ABOUT BENEFITS</a>
+		<a class="button"><?= types_render_field('benefits-contact-button-copy', array('output'=>'raw')) ;?></a>
 	</div>
 </div>
 

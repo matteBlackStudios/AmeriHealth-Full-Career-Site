@@ -110,7 +110,7 @@ if($count != 0){
 									<td class="show-for-medium id">'. $row['ReqGuid'] .'</td>
 									<td class="jobtitle">'. $row['JobTitle'] .'</td>
 		    	                    <td class="location">'. $row['JobLocation'] .'</td>
-		    		                <td class="show-for-medium posted">'. $row['PostDate'] .'</td>
+		    		                <td class="show-for-medium posted">'. date('m/d/Y', strtotime($row['PostDate'])) .'</td>
                             </tr>';
     }
     $result['postings'] .= '</tbody>

@@ -10,6 +10,8 @@
 	    position: absolute;
 	    width: 100%;
 	    bottom: -40px;
+        left: 0;
+		right: 0;
 	}
 	.button {
 		display: block;
@@ -44,7 +46,10 @@
 }
 #home-intro {
 	h1 {
-		margin: rem-calc(100) 0;
+		margin: rem-calc(20) 0;
+		@include breakpoint(medium) {
+			margin: rem-calc(100) 0;
+		}
 		text-align: center;
 		color: $amerihealth-blue;
 		font-weight: bold;
@@ -55,13 +60,20 @@
 	margin-bottom: rem-calc(80);
 	h4 {
 		margin-top: rem-calc(22);
-		margin-bottom: rem-calc(60);
+		margin-bottom: rem-calc(20);
+		@include breakpoint(medium) {
+			margin-bottom: rem-calc(60);
+		}
 	}
 	a {
 		color: #68BBE8;
 		font-weight: bold;
 		margin-bottom: rem-calc(10);
 		display: block;
+		text-align: center;
+		@include breakpoint(medium) {
+			text-align: left;
+		}
 	}
 	p {
 		color: #68BBE8;
@@ -72,7 +84,7 @@
 	}
 	.button {
 		color: $white;
-		width: 100%;
+		text-align: center;
 	}
 	.border-left {
 		border-left: 1px solid #E4E5E6;

@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="small-12 medium-6 large-4 large-offset-2 columns text-center">
-				<p>Suspendisse viverra dictum libero at viverra?</p>
+				<p class="show-for-medium">Suspendisse viverra dictum libero at viverra?</p>
 				<a class="button">CONTACT US NOW <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 			</div>
 			<div class="small-12 medium-3 large-2 large-offset-2 columns show-for-medium">

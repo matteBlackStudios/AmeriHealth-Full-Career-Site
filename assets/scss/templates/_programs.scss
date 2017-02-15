@@ -1,0 +1,78 @@
+#program-header {
+	h1 {
+		color: $amerihealth-blue;
+		margin-bottom: rem-calc(40);
+	}
+	hr {
+		margin-bottom: rem-calc(60);
+	}
+}
+#program-top {
+	margin-bottom: rem-calc(80);
+	#image-left {
+		height: rem-calc(400);
+	}
+	.uncollapse-section {
+		@include breakpoint(medium) {
+			max-width: 37.5rem;
+			padding-left: 3.125rem;
+		}
+	}
+	h2, h3 {
+		color: $amerihealth-blue;
+	}
+	h3 {
+		@include breakpoint(large) {
+			font-size: rem-calc(20);	
+		}
+	}
+}
+#program-video {
+	margin-bottom: rem-calc(80);
+	h4 {
+		color: $amerihealth-blue;
+		margin-bottom: rem-calc(20);
+	}
+	.wp-video {
+		margin: auto;
+		width: 100%!important;
+	}
+	.mejs-video {
+		width: 100%!important;
+		height: rem-calc(450)!important;
+		box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+	}
+}
+.program-copy {
+	margin-bottom: rem-calc(80);
+	h4 {
+		margin-bottom: rem-calc(20);
+	}
+}
+#program-bar {
+	background: $amerihealth-light-blue;
+	padding: rem-calc(40) 0;
+	h3 {
+		color: $white;
+		margin-bottom: rem-calc(20);
+	} 
+	a {
+		color: $white;
+		display: block;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	.button {
+		&.category {
+			margin-top: rem-calc(40);
+		}
+		display: block;
+		width: 100%;
+		font-weight: bold;
+		background: $white;
+		margin-top: rem-calc(15);
+		color: $amerihealth-dark-blue;
+		transition: all ease 0.3s;
+	}
+}
